@@ -1,0 +1,41 @@
+#Question 2
+
+import queue
+
+my_queue = queue.Queue()
+
+element_to_add = "Hello, Queue!"
+
+my_queue.put(element_to_add)
+
+popped_element = my_queue.get()
+
+print("Added element:", element_to_add)
+
+print("Popped element:", popped_element)
+
+
+
+print("Added element:", element_to_add)
+
+print("Popped element:", popped_element)
+
+#Question 3
+
+
+import queue
+
+my_priority_queue = queue.PriorityQueue()
+
+my_priority_queue.put((2, "Second Priority"))
+my_priority_queue.put((1, "First Priority"))
+my_priority_queue.put((3, "Third Priority"))
+
+popped_element = my_priority_queue.get()
+
+print("Added elements to the Priority Queue:")
+print("(2, 'Second Priority')")
+print("(1, 'First Priority')")
+print("(3, 'Third Priority')")
+
+print("\nPopped element from the Priority Queue:", popped_element[1])
